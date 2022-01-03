@@ -1,0 +1,68 @@
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<style>
+  .hello-msg{
+    font-size: 18px;
+    color: #fff;
+    margin-right: 20px;
+  }
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <img src=''>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href=""><h2>WEB APP</h2></a>
+      </li>
+      
+    </ul>
+</div>
+
+  <span class="hello-msg">Hello, {{request.user}}</span>
+  <span><a class="hello-msg" href="{% url 'logout' %}">Logout</a></span>
+
+</nav>
+
+<hr>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="card card-body">
+			<a class="btn btn-warning" href="">PROFILE</a>
+			<hr>
+			<h3 style="text-align: center;">Account Settings</h3>
+
+			<p>Email : {{request.user.email}}</p>
+
+		
+			
+		</div>
+		
+	</div>
+
+	<div class="col-md-9">
+		<div class="card card-body">
+			
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+</body>
+
+</html>
