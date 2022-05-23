@@ -46,7 +46,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV='/home/afroteop/Desktop/user/env'
+VIRTUAL_ENV='/media/afroteop/da442186-249a-498d-9496-21fc43465d5f/ubuntu/desktop/user/env'
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

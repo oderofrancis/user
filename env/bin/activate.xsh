@@ -28,7 +28,7 @@ def _deactivate(args):
 _deactivate(["nondestructive"])
 aliases["deactivate"] = _deactivate
 
-$VIRTUAL_ENV = r"/home/afroteop/Desktop/user/env"
+$VIRTUAL_ENV = r"/media/afroteop/da442186-249a-498d-9496-21fc43465d5f/ubuntu/desktop/user/env"
 
 $_OLD_VIRTUAL_PATH = $PATH
 $PATH = $PATH[:]

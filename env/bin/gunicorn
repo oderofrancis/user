@@ -1,0 +1,8 @@
+#!/media/afroteop/da442186-249a-498d-9496-21fc43465d5f/ubuntu/desktop/user/env/bin/python
+# -*- coding: utf-8 -*-
+import re
+import sys
+from gunicorn.app.wsgiapp import run
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(run())
